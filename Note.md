@@ -1,4 +1,4 @@
-# Interview-friendly explanation for Terraform
+### Interview-friendly explanation for Terraform
 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Terraform is an open-source Infrastructure as Code (IaC) tool that lets you define and manage your cloud resources—like servers, databases, and networks—using simple configuration files. Instead of clicking around in the cloud console, you write code, and Terraform automatically creates, updates, or deletes resources to match that code. It works with multiple cloud providers (AWS, Azure, GCP, etc.) and keeps track of your infrastructure state so changes are predictable and repeatable.
 
@@ -8,7 +8,7 @@
 
 ---
 
-## Terraform init
+#### Terraform init
 
 `terraform init` initializes a Terraform working directory by installing the required provider plugins, setting up the backend for storing state files, and preparing modules. It ensures Terraform has the necessary binaries and configuration to manage infrastructure according to the `.tf` files in the directory.
 
@@ -31,7 +31,7 @@
 
 ---
 
-### Terraform plan
+#### Terraform plan
 
 `terraform plan` shows you what changes Terraform will make before actually applying them. It compares your configuration files with the current state and gives a preview of resources to be created, updated, or destroyed.
 
@@ -47,7 +47,7 @@ It’s like reviewing a shopping list before going to the store—terraform plan
 
 ---
 
-### Terraform apply
+#### Terraform apply
 
 `terraform apply` actually makes the changes to your cloud. It takes the plan created by Terraform, then creates, updates, or deletes resources so that your real infrastructure matches your code.
 
@@ -63,7 +63,7 @@ If `terraform plan` is like previewing a shopping list, `terraform apply` is act
 
 ---
 
-### Terraform destroy
+#### Terraform destroy
 
 `terraform destroy` removes all the resources that Terraform created, tearing down the infrastructure defined in your code.
 
@@ -79,7 +79,7 @@ If `terraform apply` is building a house from a blueprint, `terraform destroy` i
 
 ---
 
-### Terraform Command Lifecycle (for Interviews)
+#### Terraform Command Lifecycle (for Interviews)
 
 | Command                 | Purpose (Simple)   | Purpose (Technical)                                                                                                       |
 | ----------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------- |
