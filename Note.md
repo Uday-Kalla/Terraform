@@ -125,3 +125,6 @@ flowchart LR
 - `terraform apply` → creates/updates the infrastructure 🏗️
 
 - `terraform destroy` → removes everything Terraform built 🛠️
+
+---
+
