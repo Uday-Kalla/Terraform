@@ -31,6 +31,23 @@
 
 ---
 
+#### Terraform Validate
+
+**"`terraform validate` checks your Terraform configuration files for syntax errors and internal consistency, but it does not check against real cloud resources."**
+
+**Key points (interview-friendly):**
+
+* Ensures `.tf` files are **syntactically correct**.
+* Checks for **basic logical issues** (e.g., missing variables, unsupported arguments).
+* Does **not** contact the cloud provider (no API calls).
+* Helps catch mistakes early before running `plan` or `apply`.
+
+**Analogy:** 
+
+It’s like proofreading your blueprint before sending it to the builder — it makes sure the instructions are written correctly, but doesn’t check if the materials exist in the store.
+
+---
+
 #### Terraform plan
 
 `terraform plan` shows you what changes Terraform will make before actually applying them. It compares your configuration files with the current state and gives a preview of resources to be created, updated, or destroyed.
