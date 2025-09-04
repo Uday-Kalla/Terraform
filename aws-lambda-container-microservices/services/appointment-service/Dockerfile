@@ -2,10 +2,10 @@ FROM public.ecr.aws/lambda/nodejs:18
 
 # Install dependencies
 COPY package*.json ./
-RUN npm install --only=production
+RUN npm install
 
-# Copy app source
-COPY . .
+# Copy app code
+COPY appointment-service.js ./
 
-# Command for Lambda
-CMD [ "patient-service.handler" ]
+# Lambda entrypoint
+CMD ["appointment-service.handler"]
